@@ -12,25 +12,26 @@ st.set_page_config(page_title="Diabetes Prediction App", page_icon="🩺", layou
 st.markdown("""
     <style>
     .main {
-        background-color: #f0f2f6;
+        background-color: #1c2526;
         padding: 20px;
         border-radius: 10px;
+        color: #e0e0e0;
     }
     .title {
-        color: #1e3a8a;
+        color: #60a5fa;
         font-size: 36px;
         font-weight: bold;
         text-align: center;
         margin-bottom: 20px;
     }
     .subtitle {
-        color: #4b5e7a;
+        color: #94a3b8;
         font-size: 20px;
         text-align: center;
         margin-bottom: 30px;
     }
     .stButton>button {
-        background-color: #1e3a8a;
+        background-color: #2563eb;
         color: white;
         border-radius: 8px;
         padding: 10px 20px;
@@ -45,15 +46,18 @@ st.markdown("""
     }
     .stTextInput>div>input, .stNumberInput>div>input {
         border-radius: 8px;
-        border: 1px solid #d1d5db;
+        border: 1px solid #4b5e7a;
         padding: 10px;
         font-size: 16px;
+        background-color: #2d3748;
+        color: #e0e0e0;
     }
     .sidebar .sidebar-content {
-        background-color: #ffffff;
+        background-color: #2d3748;
         border-radius: 10px;
         padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        color: #e0e0e0;
     }
     .prediction-box {
         padding: 20px;
@@ -64,12 +68,12 @@ st.markdown("""
         margin-top: 20px;
     }
     .success {
-        background-color: #d4edda;
-        color: #155724;
+        background-color: #2f855a;
+        color: #d4edda;
     }
     .warning {
-        background-color: #fff3cd;
-        color: #856404;
+        background-color: #b7791f;
+        color: #fefcbf;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -154,12 +158,12 @@ def display_probability_gauge(probability):
             'axis': {'range': [0, 100]},
             'bar': {'color': "darkblue"},
             'steps': [
-                {'range': [0, 30], 'color': "#d4edda"},
-                {'range': [30, 70], 'color': "#fff3cd"},
-                {'range': [70, 100], 'color': "#f8d7da"}
+                {'range': [0, 30], 'color': "#2f855a"},
+                {'range': [30, 70], 'color': "#b7791f"},
+                {'range': [70, 100], 'color': "#dc2626"}
             ],
             'threshold': {
-                'line': {'color': "black", 'width': 4},
+                'line': {'color': "white", 'width': 4},
                 'thickness': 0.75,
                 'value': probability
             }
@@ -207,8 +211,8 @@ if submit:
 
 # Footer
 st.markdown("""
-    <hr style="border-top: 1px solid #d1d5db; margin-top: 40px;">
-    <div style="text-align: center; color: #4b5e7a; font-size: 14px;">
+    <hr style="border-top: 1px solid #4b5e7a; margin-top: 40px;">
+    <div style="text-align: center; color: #94a3b8; font-size: 14px;">
         © 2025 Diabetes Prediction App. All rights reserved.
     </div>
 """, unsafe_allow_html=True)
