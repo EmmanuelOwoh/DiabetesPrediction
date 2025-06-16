@@ -119,7 +119,7 @@ with st.expander("📝 Enter Patient Information"):
 
     with col1:
         pregnancies = st.number_input("Pregnancies", min_value=0, max_value=20, value=0, step=1,
-                                      help="Number of times the patient has been pregnant.")
+                                      help="Number of times the patient has been pregnan/ Only applicable to females.")
         glucose = st.number_input("Glucose (mg/dL)", min_value=0.0, max_value=300.0, value=0.0,
                                   help="Plasma glucose concentration after fasting.")
         blood_pressure = st.number_input("Blood Pressure (mm Hg)", min_value=0.0, max_value=200.0, value=0.0,
