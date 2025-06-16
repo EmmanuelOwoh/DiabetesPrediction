@@ -104,7 +104,7 @@ with st.sidebar:
         - Diabetes Pedigree Function
         - Age
 
-        Developed by Emmanuel | Powered by Streamlit
+        Developed by Chukwuebuka Emmanuel Owoh 2328893 | Powered by Streamlit
     """)
 
 # Page title & logo
